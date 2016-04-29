@@ -1,1 +1,11 @@
 language: generic
+deploy:
+  provider: gcs
+  access_key_id: GOOGVAWSAUZJBYL6QNXN
+  secret_access_key:
+    secure: ME483G6t0bZ50Zbb+sEWZK9goVM9j9DMybNgi/a5ge7nV8QjAkURYglrOs19Ug16uTIFLpvjJEnhLFHwgIFz+tFkJceTQxL1jvKtSyIiEAf3Rtc1pA2Do05UTjspo9OQYc/JkNlD5kxib8uZqtDTiHapKNMctMdtnbEDRhbbShQCE06KVLBYv0kQXt69n6VgTAoePBk/LRfwMjRu/1Ci80csY9Chn2V7i9lTJ3KgHBKfrJEHUr0UHUgHu/2fMYhIS2M2H14qQluD8sRtGwnqU+IOBa4qfOeyHcMn9tgh/KJnOn0HLBN7G/k7f9QMu7uAZtMkj8UPX0MIis8z8L0HrQFURzEPmrB0aLqxiFXWtKETTp2NXKSyHj+suDJ6cf2DC4Ai1R86ovsDwSLSL87v83Rs+kbmbhi9fLXo0Sq/5RO5AwkjA1fc6d+L6W86qTSs27cFx7psJig/MRSyml7ZThzG/y64Qlk61t2SmNXVxueQ/zlNxOoHZxRa7vk0a/g52fbJekvxB7NSfX6p2enqeKoIB9d53z2V2DsgSHGfLKm4Dxo9ADnMUDawuLPhHcS2zuH3DKlqSp6Djr9Cn4f18ViqdRlTxOyg73kpKr6897Hjc6DHefpFlWvSXS+GZ+cCImBof5q5ksJlXZJ7+Atx4dO0BFFTCijsNE+ZOuf0V6o=
+  bucket: www.farazfadavi.com
+  acl: public_read
+  skip_cleanup: true
+  on:
+    repo: farazfadavi/farazfadavi.com
